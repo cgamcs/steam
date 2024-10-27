@@ -6,6 +6,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scrollbar-width: none;
 }
 *, 
 *:before,
@@ -18,6 +19,9 @@ body {
     font-style: normal;
     color: var(--blanco);
     background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 952px;
     max-width: 120rem;
     min-height: calc(100vh - 511px);
@@ -25,6 +29,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: var(--blanco);
 }
 
 h1, h2, h3 { font-weight: 400; }
@@ -156,6 +161,29 @@ a.gris { margin-left: 1rem;}
     border-radius: 0.8rem;
 }
 
+.proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+
+    p {
+        width: 29.1rem;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+}
+
+.proyectos:last-child {
+    margin-top: 1rem;
+}
+
+.proyectos-img {
+    width: 29.1rem;
+    border-radius: 0.5rem;
+}
+
 .frase-img {
     width: 6.4rem;
     height: auto;
@@ -165,9 +193,27 @@ a.gris { margin-left: 1rem;}
 .guia {
     display: flex;
     flex-direction: row;
-    padding: 1rem 5rem;
+    gap: 1rem;
+    padding: 1rem;
     align-items: center;
+    justify-content: space-between;
+
+    a { font-size: 2rem; }
 }
+
+.guia-columna {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.guia-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.guia-info:last-child { margin-bottom: 0; }
 
 .description {
     p {
