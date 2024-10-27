@@ -177,7 +177,7 @@ a.gris { margin-left: 1rem;}
 }
 
 .content-tops {
-    flex-basis: calc(30.5% - 1rem);
+    flex-basis: calc(41% - 1rem);
     background-color: rgba(29, 29, 29, 0.5);
     backdrop-filter: blur(0.8rem);
     padding: 1rem;
